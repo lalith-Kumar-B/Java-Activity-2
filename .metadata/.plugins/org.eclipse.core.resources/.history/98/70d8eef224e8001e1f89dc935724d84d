@@ -1,0 +1,10 @@
+package jp;
+
+public class P4_AreaOfRectangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

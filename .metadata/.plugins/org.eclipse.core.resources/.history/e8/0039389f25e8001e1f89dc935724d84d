@@ -1,0 +1,11 @@
+//5. program to demonstrate a division by zero exception
+package jp;
+
+public class P5_DivisionZeroException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

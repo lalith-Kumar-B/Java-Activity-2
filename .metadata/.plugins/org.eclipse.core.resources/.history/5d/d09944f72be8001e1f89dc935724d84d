@@ -1,0 +1,13 @@
+//9. Program to add two integers and two float numbers. When no arguments are supplied, 
+//give a default value to calculate the sum. Use function overloading. 
+
+package jp;
+
+public class P9_SumFunctionOverloading {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

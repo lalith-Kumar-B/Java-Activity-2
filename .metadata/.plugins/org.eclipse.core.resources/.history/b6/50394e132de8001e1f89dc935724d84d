@@ -1,0 +1,13 @@
+//10. Program to perform mathematical operations. Create a class called AddSub with methods to add and subtract. 
+//Create another class called MulDiv that extends from AddSub class to use the member data of the super class. MulDiv should have methods to multiply and divide A main function should access the methods and perform the mathematical operations. 
+
+package jp;
+
+class A
+public class P10_MathInheretedClass {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

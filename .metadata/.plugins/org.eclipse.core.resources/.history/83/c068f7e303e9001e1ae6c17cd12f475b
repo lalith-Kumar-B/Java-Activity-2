@@ -1,0 +1,56 @@
+/**16. Program to define a class called employee with the name and date of appointment. 
+Create ten employee objects as an array and sort them as per their date of appointment
+, print them as per their seniority.*/ 
+
+package jp;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+class Employee {
+    String name;
+    String dateOfAppointment;
+
+    // Constructor
+    public Employee(String name, String dateOfAppointment) {
+        this.name = name;
+        this.dateOfAppointment = dateOfAppointment;
+    }
+
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+
+    // Getter for dateOfAppointment
+    public String getDateOfAppointment() {
+        return dateOfAppointment;
+    }
+}
+
+public class P16_EmployeSortBySeniority{
+    public static void main(String[] args) {
+        // Creating ten Employee objects
+        Employee[] employees = {
+            new Employee("John", "2022-01-01"),
+            new Employee("Emma", "2022-01-15"),
+            new Employee("Michael", "2022-02-05"),
+            new Employee("Sophia", "2022-02-10"),
+            new Employee("William", "2022-03-20"),
+            new Employee("Olivia", "2022-04-05"),
+            new Employee("James", "2022-04-15"),
+            new Employee("Amelia", "2022-05-01"),
+            new Employee("Alexander", "2022-05-10"),
+            new Employee("Charlotte", "2022-06-15")
+        };
+
+        // Sorting employees based on date of appointment
+        Arrays.sort(employees, Comparator.comparing(Employee::getDateOfAppointment));
+
+        // Printing employees sorted by date of appointment
+        System.out.println("Employees sorted by date of appointment:");
+        for (Employee emp : employees) {
+            System.out.println("Name: " + emp.getName() + ", Date of Appointment: " + emp.getDateOfAppointment());
+        }
+    }
+}

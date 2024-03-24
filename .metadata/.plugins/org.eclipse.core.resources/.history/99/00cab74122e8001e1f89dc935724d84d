@@ -1,0 +1,15 @@
+/** 1. Program to print the following triangle of numbers1 1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 */ 
+
+package jp;
+
+public class NumPyramid {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

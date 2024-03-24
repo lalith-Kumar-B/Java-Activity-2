@@ -1,0 +1,36 @@
+// User-defined exception class
+class PayOutOfBoundsException extends Exception {
+    // Constructor
+    public PayOutOfBoundsException(String message) {
+        super(message);
+    }
+}
+
+// Example class using the custom exception
+class SalaryCalculator {
+    // Method to calculate salary
+    
+}
+
+public class P6_PayOutOfBoundsException{
+	
+	public void calculateSalary(double pay) throws PayOutOfBoundsException {
+        if (pay < 0 || pay > 100000) { // Define the bounds for pay
+            throw new PayOutOfBoundsException("Pay out of bounds: " + pay);
+        } else {
+            System.out.println("Salary calculated successfully!");
+        }
+    }
+	
+    public static void main(String[] args) {
+    	 P6_PayOutOfBoundsException calculator = new  P6_PayOutOfBoundsException();
+        
+        try {
+            double pay = 120000; // Example pay
+            calculator.calculateSalary(pay);
+        } catch (PayOutOfBoundsException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+            // Handle the exception
+        }
+    }
+}

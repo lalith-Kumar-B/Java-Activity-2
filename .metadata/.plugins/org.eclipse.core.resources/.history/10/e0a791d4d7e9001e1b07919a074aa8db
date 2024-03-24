@@ -1,0 +1,28 @@
+package student.Fulltime.BCA;
+
+public class Student {
+    private String name;
+    private int age;
+    private char sex;
+
+    // Constructor
+    public Student(String name, int age, char sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+    // Method to store student information
+    public void storeStudentInfo(String name, int age, char sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+    // Method to display student information
+    public void displayStudentInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Sex: " + sex);
+    }
+}

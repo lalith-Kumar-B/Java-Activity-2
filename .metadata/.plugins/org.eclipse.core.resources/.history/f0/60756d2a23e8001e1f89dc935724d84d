@@ -1,0 +1,10 @@
+package jp;
+
+public class P2_welcomeString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

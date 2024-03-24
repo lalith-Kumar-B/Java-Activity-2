@@ -1,0 +1,39 @@
+//14. In a college first year class are having the following attributes Name of the class (BCA, BCom, BSc), 
+//Name of the staff No of the students in the class, Array of students in the class 
+
+package jp;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+class FirstYearClass{
+	
+	String ClassName,StaffName;
+	int StrengthOfClass;
+	String[] students = new String[65];
+	
+	FirstYearClass(String className,String staffName, int strength){
+		this.ClassName = className;
+		this.StaffName = staffName;
+		this.StrengthOfClass = strength;
+	}
+	
+	void insertStudents(String[] studentList) {
+		for(int x=0; x <= this.StrengthOfClass; x++) {
+			this.students[x] = studentList[0];
+		}
+	}
+	void displayClass() {
+		System.out.println("Class : "+this.ClassName);
+		System.out.println("Class Strength : "+this.StrengthOfClass);
+		System.out.println("Students : "+Arrays.asList(this.students));
+	}
+}
+
+public class P14_1stYearClass {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
