@@ -1,0 +1,20 @@
+//19. Program to handle Null Pointer Exception and use the “finally” method to display a message to the user. 
+
+package jp;
+
+public class P19_NullPointerExcep {
+    public static void main(String[] args) {
+        try {
+            // Attempt to call a method on a null object reference
+            String str = null;
+            int length = str.length(); // This will throw NullPointerException
+        } catch (NullPointerException e) {
+            // Handle the exception
+            System.out.println("Caught NullPointerException: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            // Display a message to the user in the finally block
+            System.out.println("This is the finally block. Program execution completed.");
+        }
+    }
+}
