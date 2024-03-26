@@ -1,7 +1,6 @@
 //15. Define a class called first year with above attributes and define a suitable constructor. Also write a method called best Student () which process a first-year object and return the student with the highest total mark. In the main method define a first-year object and find the best student of this class 
 
 package jp;
-
 class FirstYear {
     String className;
     String staffName;

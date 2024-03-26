@@ -3,4 +3,5 @@
     <entry loc="/usr/lib/jvm/java-17-openjdk-amd64" stamp="1707731667976"/>
     <entry loc="/snap/eclipse/81/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.9.v20231028-0858/jre" stamp="1708708473000"/>
     <entry loc="/snap/eclipse/81/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.9.v20231028-0858" stamp="1708708473000"/>
+    <entry loc="/usr/lib/jvm/jdk-17-oracle-x64" stamp="1711432434890"/>
 </dirs>
