@@ -1,8 +1,11 @@
 //20. Program which create and displays a message on the window 
 
 package jp;
-import java.awt.*;
+import java.awt.Frame;
+import java.awt.Label;
+import java.awt.event.*;
 
+@SuppressWarnings("serial")
 class MsgFrame extends Frame{
 	
 	MsgFrame(){
@@ -13,11 +16,18 @@ class MsgFrame extends Frame{
 		this.setTitle("Message Window");
 		this.setLayout(null);
 		this.setVisible(true);
+		
+		addWindowListener(new WindowAdapter() {
+	            public void windowClosing(WindowEvent e) {
+	                dispose(); 
+	            }
+	        });
 	}
 }
 
 public class P20_MsgWindow {
     public static void main(String[] args) {
-    	MsgFrame a = new MsgFrame();
+    	@SuppressWarnings("unused")
+		MsgFrame a = new MsgFrame();
     }
 }

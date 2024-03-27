@@ -4,7 +4,8 @@
 package jp;
 
 public class P18_NegativeArrSize{
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
         try {
             int[] arr = new int[-5]; 
         } catch (NegativeArraySizeException e) {

@@ -2,7 +2,7 @@
 //Name of the staff No of the students in the class, Array of students in the class 
 
 package jp;
-
+			//Read all the comments before Writing the program down ... 
 import java.util.Arrays;
 
 class FirstYearClass{
@@ -38,9 +38,13 @@ public class P14_1stYearClass {
 
 	public static void main(String[] args) {
 		
-		FirstYearClass class1 = new FirstYearClass("BCA","Mr. Melwyn",64);
-		FirstYearClass class2 = new FirstYearClass("BCom","Mr. Commerce",20);
-		FirstYearClass class3 = new FirstYearClass("Bsc","Mr. Scientist",20);
+		FirstYearClass class1 = new FirstYearClass("BCA","Mr. Melwyn",64); //Instead of 64 make it four, If you want your life to be simple 
+		FirstYearClass class2 = new FirstYearClass("BCom","Mr. Commerce",20);//This one too
+		FirstYearClass class3 = new FirstYearClass("Bsc","Mr. Scientist",20);//This one too
+		
+		//Don't copy everything from Below ...
+		//just write 4 names in the array example: String[] BcaStudents = { write any 4 names that you like };
+		//Similarly for BcomStudents and BscStudents, I hope there No dummy in My class, Who will write down everything ...
 		
 		String[] BcaStudents = {
 			    "PJ LONEY ARAVIND","ABHISHEK A","ABHISHEK KUMAR","ABEL ABRAHAM SANTHOSH","MAZIN RIYAZ","MEHUL MONCY","AAKASH PRASAD","MISBA FATHIMA","ARUN KUMAR M","SAMUEL A",
@@ -75,7 +79,9 @@ public class P14_1stYearClass {
 
 }
 
-// OUTPUT
+//The output will change to 4 names that you have passed in array...,So change it Accordingly.
+
+// OUTPUT 
 /**
  Class : BCA
 Class Strength : 64

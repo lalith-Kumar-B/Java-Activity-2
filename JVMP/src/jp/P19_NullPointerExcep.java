@@ -3,11 +3,13 @@
 package jp;
 
 public class P19_NullPointerExcep {
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
         try {
             // Attempt to call a method on a null object reference
             String str = null;
-            int length = str.length(); // This will throw NullPointerException
+            @SuppressWarnings("null")
+			int length = str.length(); // This will throw NullPointerException
         } catch (NullPointerException e) {
             // Handle the exception
             System.out.println("Caught NullPointerException: " + e.getMessage());
