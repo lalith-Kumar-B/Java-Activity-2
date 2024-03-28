@@ -1,0 +1,13 @@
+//21. Program to draw several shapes in the created window 
+
+package jp;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class P21_ShapesWindow {
+
+    public static void main(String[] args) {
+       
+    }
+}

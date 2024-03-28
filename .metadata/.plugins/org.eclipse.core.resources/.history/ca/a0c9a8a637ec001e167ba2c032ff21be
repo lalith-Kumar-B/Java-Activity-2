@@ -1,0 +1,26 @@
+package jp;
+import java.applet.Applet;
+import java.awt.*;
+
+@SuppressWarnings({ "removal", "serial" })
+public class P22_GridLinesApplet extends Applet {
+    
+    @Override
+    public void paint(Graphics g) {
+        int width = getWidth();
+        int height = getHeight();
+        
+        // Set the color of the lines
+        g.setColor(Color.BLACK);
+        
+        // Draw horizontal lines
+        for (int y = 0; y < height; y += 20) {
+            g.drawLine(0, y, width, y);
+        }
+        
+        // Draw vertical lines
+        for (int x = 0; x < width; x += 20) {
+            g.drawLine(x, 0, x, height);
+        }
+    }
+}

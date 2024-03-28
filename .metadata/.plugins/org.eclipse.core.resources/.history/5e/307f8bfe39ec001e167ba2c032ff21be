@@ -1,0 +1,24 @@
+package jp;
+import java.applet.Applet;
+import java.awt.*;
+
+public class GridLinesApplet extends Applet {
+    private final int rows = 10;
+    private final int cols = 10;
+    private final int cellWidth = 50;
+    private final int cellHeight = 50;
+
+    public void paint(Graphics g) {
+        // Draw horizontal grid lines
+        for (int i = 0; i <= rows; i++) {
+            int y = i * cellHeight;
+            g.drawLine(0, y, cols * cellWidth, y);
+        }
+
+        // Draw vertical grid lines
+        for (int i = 0; i <= cols; i++) {
+            int x = i * cellWidth;
+            g.drawLine(x, 0, x, rows * cellHeight);
+        }
+    }
+}

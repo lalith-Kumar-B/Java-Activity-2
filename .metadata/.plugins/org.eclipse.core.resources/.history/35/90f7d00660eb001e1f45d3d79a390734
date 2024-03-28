@@ -1,0 +1,11 @@
+//20. Program which create and displays a message on the window 
+
+package jp;
+
+import javax.swing.JOptionPane;
+
+public class P20_MsgWindow {
+    public static void main(String[] args) {
+    	JOptionPane.showMessageDialog(null, "Hello world");
+    }
+}

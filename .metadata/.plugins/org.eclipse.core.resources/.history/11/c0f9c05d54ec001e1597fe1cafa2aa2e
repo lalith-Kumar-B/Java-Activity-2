@@ -1,0 +1,94 @@
+//14. In a college first year class are having the following attributes Name of the class (BCA, BCom, BSc), 
+//Name of the staff No of the students in the class, Array of students in the class 
+
+package jp;
+
+import java.util.Arrays;
+
+class FirstYearClass{
+	
+	String ClassName,StaffName;
+	int StrengthOfClass;
+	String[] students = new String[65];
+	
+	FirstYearClass(String className,String staffName, int strength){
+		this.ClassName = className;
+		this.StaffName = staffName;
+		this.StrengthOfClass = strength;
+	}
+	
+	void insertStudents(String[] studentList) {
+		for(int x=0; x <= studentList.length; x++) {
+			if (x < studentList.length) {
+	            this.students[x] = studentList[x].toUpperCase();
+	        } else {
+	            this.students[x] = "";
+	        }
+		}
+	}
+		
+	void displayClass() {
+		System.out.println("Class : "+this.ClassName);
+		System.out.println("Class Strength : "+this.StrengthOfClass);
+		System.out.println("Students : "+Arrays.asList(this.students));
+	}
+}
+
+public class P14_1stYearClass {
+
+	public static void main(String[] args) {
+		
+		FirstYearClass class1 = new FirstYearClass("BCA","Mr. Melwyn",64);
+		FirstYearClass class2 = new FirstYearClass("BCom","Mr. Commerce",20);
+		FirstYearClass class3 = new FirstYearClass("Bsc","Mr. Scientist",20);
+		
+		//Dont copy everything from Below ...
+		//just write 4 names in the array example: String[] BcaStudents = { write any 4 names that you like };
+		//Similarly for BcomStudents and BscStudents, I hope there No dummy in My class, Who will write down everything ...
+		
+		String[] BcaStudents = {
+			    "PJ LONEY ARAVIND","ABHISHEK A","ABHISHEK KUMAR","ABEL ABRAHAM SANTHOSH","MAZIN RIYAZ","MEHUL MONCY","AAKASH PRASAD","MISBA FATHIMA","ARUN KUMAR M","SAMUEL A",
+			    "JAI KEERTHI P","TEJU A","MOHAMMED HADI DHANALIWALA","BHARATH T","ASHUTOSH KUMAR SINGH","V SACHIN","SACHIN S","D HARDIK JAIR","VIMALA MARY S","MUHAMMED RASHID C K",
+			    "TEJAS THIMMAIAH P P","MANI KANTAN K","ANAGHA KRISHNAN","RAHUL R","RAGHUL R","PRINCETINE XAVIER B","JACOB J","SUDHA S",
+			    "ROBIN STEVA A","THAMIZHINIAN A L","MARSHILIN ANTO G","MOHAMMED FAIZAN","JOHNSON AKASH A","GOPAL CHANDAK","TUSHAR TIWARI","MOHAMMED ZAIYN ARBAZ KHAN",
+			    "SREELAYA T R","MUHAMMED SANIN N","ADITYA MINZ","PAUL THARAKAN","CHERIYA THOTTONDAVIDA MOHAMMED NAMEER","DASARI PRADEEP",
+			    "YASHVARDHAN N","KEERTHI PRASAD A","ANUJ BHENGRA","ARMINIA TOPPO","LALITH KUMAR GANCHI","DEENA DAYALAN","MANASA P",
+			    "UMAID IMTIYAZ","THOKCHOM THANGENSANA SINGH","SAMRAT CHAKRABORTY","ASHUTOSH SHARMA","KASHIF LATIF","DEEPSON NARENGBAM",
+			    "MOSES STANLEY","DERRIC PAULSEN D","FELISHIA A","SHEMBORLANG THONGNI","LIANSIAMGOU HAUZEL","BRETTUS S BABU","SAQUIB ALI BAIG","DEVI PRASAD P B","KAZIM ALI"
+			};
+
+		String[] BComStudents = {
+			    "John Smith","Emma Johnson","Michael Williams","Sophia Brown","William Jones","Olivia Miller","James Davis","Amelia Garcia",
+			    "Alexander Rodriguez","Charlotte Wilson","Aiden Martinez","Isabella Anderson","Ethan Taylor","Mia Thomas","Jacob Hernandez","Ava Moore","Daniel Martin","Emily Lee","Matthew Clark","Sofia Lewis"
+			};
+
+			String[] BscStudents = {
+			    "Benjamin Walker","Abigail Hall","Logan Allen","Elizabeth Young","Noah King","Chloe Scott","Daniel Nguyen","Lily Wright","Michael Turner",
+			    "Grace Mitchell","Alexander Baker","Zoe Carter","Elijah Perez","Madison Thompson","James Hill","Charlotte Green","Ethan Adams","Avery Nelson","Mason Carter","Harper Ramirez"
+			};
+
+		
+		class1.insertStudents(BcaStudents);
+		class2.insertStudents(BComStudents);
+		class3.insertStudents(BscStudents);
+		
+		class1.displayClass();
+		class2.displayClass();
+		class3.displayClass();
+	}
+
+}
+
+// OUTPUT
+/**
+ Class : BCA
+Class Strength : 64
+Students : [PJ LONEY ARAVIND, ABHISHEK A, ABHISHEK KUMAR, ABEL ABRAHAM SANTHOSH, MAZIN RIYAZ, MEHUL MONCY, AAKASH PRASAD, MISBA FATHIMA, ARUN KUMAR M, SAMUEL A, JAI KEERTHI P, TEJU A, MOHAMMED HADI DHANALIWALA, BHARATH T, ASHUTOSH KUMAR SINGH, V SACHIN, SACHIN S, D HARDIK JAIR, VIMALA MARY S, MUHAMMED RASHID C K, TEJAS THIMMAIAH P P, MANI KANTAN K, ANAGHA KRISHNAN, RAHUL R, RAGHUL R, PRINCETINE XAVIER B, JACOB J, SUDHA S, ROBIN STEVA A, THAMIZHINIAN A L, MARSHILIN ANTO G, MOHAMMED FAIZAN, JOHNSON AKASH A, GOPAL CHANDAK, TUSHAR TIWARI, MOHAMMED ZAIYN ARBAZ KHAN, SREELAYA T R, MUHAMMED SANIN N, ADITYA MINZ, PAUL THARAKAN, CHERIYA THOTTONDAVIDA MOHAMMED NAMEER, DASARI PRADEEP, YASHVARDHAN N, KEERTHI PRASAD A, ANUJ BHENGRA, ARMINIA TOPPO, LALITH KUMAR GANCHI, DEENA DAYALAN, MANASA P, UMAID IMTIYAZ, THOKCHOM THANGENSANA SINGH, SAMRAT CHAKRABORTY, ASHUTOSH SHARMA, KASHIF LATIF, DEEPSON NARENGBAM, MOSES STANLEY, DERRIC PAULSEN D, FELISHIA A, SHEMBORLANG THONGNI, LIANSIAMGOU HAUZEL, BRETTUS S BABU, SAQUIB ALI BAIG, DEVI PRASAD P B, KAZIM ALI, ]
+Class : BCom
+Class Strength : 20
+Students : [JOHN SMITH, EMMA JOHNSON, MICHAEL WILLIAMS, SOPHIA BROWN, WILLIAM JONES, OLIVIA MILLER, JAMES DAVIS, AMELIA GARCIA, ALEXANDER RODRIGUEZ, CHARLOTTE WILSON, AIDEN MARTINEZ, ISABELLA ANDERSON, ETHAN TAYLOR, MIA THOMAS, JACOB HERNANDEZ, AVA MOORE, DANIEL MARTIN, EMILY LEE, MATTHEW CLARK, SOFIA LEWIS, , null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+Class : Bsc
+Class Strength : 20
+Students : [BENJAMIN WALKER, ABIGAIL HALL, LOGAN ALLEN, ELIZABETH YOUNG, NOAH KING, CHLOE SCOTT, DANIEL NGUYEN, LILY WRIGHT, MICHAEL TURNER, GRACE MITCHELL, ALEXANDER BAKER, ZOE CARTER, ELIJAH PEREZ, MADISON THOMPSON, JAMES HILL, CHARLOTTE GREEN, ETHAN ADAMS, AVERY NELSON, MASON CARTER, HARPER RAMIREZ, , null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+*/

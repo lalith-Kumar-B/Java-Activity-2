@@ -1,0 +1,53 @@
+package jp;
+import javax.swing.*;
+import java.awt.*;
+
+public class P21_ShapesWindow extends JPanel {
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        // Set color for drawing
+        g.setColor(Color.BLUE);
+
+        // Draw a rectangle
+        g.drawRect(50, 50, 100, 50);
+
+        // Draw a filled rectangle
+        g.setColor(Color.RED);
+        g.fillRect(200, 50, 100, 50);
+
+        // Draw an oval
+        g.setColor(Color.GREEN);
+        g.drawOval(50, 150, 100, 50);
+
+        // Draw a filled oval
+        g.setColor(Color.YELLOW);
+        g.fillOval(200, 150, 100, 50);
+
+        // Draw a line
+        g.setColor(Color.BLACK);
+        g.drawLine(50, 250, 300, 250);
+    }
+
+    public static void main(String[] args) {
+        // Create a JFrame
+        JFrame frame = new JFrame("Shapes Drawing");
+
+        // Create an instance of the custom JPanel
+        ShapeDrawing shapePanel = new ShapeDrawing();
+
+        // Set panel size
+        shapePanel.setPreferredSize(new Dimension(400, 300));
+
+        // Add the panel to the frame
+        frame.getContentPane().add(shapePanel);
+
+        // Set frame properties
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null); // Center the frame
+        frame.setVisible(true);
+    }
+}

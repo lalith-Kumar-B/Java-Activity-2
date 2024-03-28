@@ -1,0 +1,24 @@
+//20. Program which create and displays a message on the window 
+
+package jp;
+
+import java.awt.*;
+
+class MsgFrame extends Frame{
+	
+	MsgFrame(){
+		Label m = new Label("My first Program using Awt package in Java.");
+		m.setBounds(50,50,150,20);
+		this.add(m);
+		this.setSize(300,200);
+		this.setTitle("Message Window");
+		this.setLayout(null);
+		this.setVisible(true);
+	}
+}
+
+public class P20_MsgWindow {
+    public static void main(String[] args) {
+    	MsgFrame a = new MsgFrame();
+    }
+}

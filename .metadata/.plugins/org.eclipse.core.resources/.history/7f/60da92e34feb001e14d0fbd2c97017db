@@ -1,0 +1,30 @@
+package jp;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+public class P20_MsgWindow {
+    public static void main(String[] args) {
+        // Create a JFrame (window)
+        JFrame frame = new JFrame("Message Window");
+
+        // Create a JLabel (message)
+        JLabel label = new JLabel("Hello, world!");
+        
+        // Add the label to the frame
+        frame.add(label);
+
+        // Set frame properties
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Close the program when the window is closed
+        frame.pack(); // Size the frame based on the preferred sizes of its components
+        frame.setVisible(true); // Make the frame visible
+
+        // Center the window on the screen
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int centerX = (int) ((screenSize.getWidth() - frame.getWidth()) / 2);
+        int centerY = (int) ((screenSize.getHeight() - frame.getHeight()) / 2);
+        frame.setLocation(centerX, centerY);
+    }
+}

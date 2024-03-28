@@ -1,0 +1,24 @@
+//21. Program to draw several shapes in the created window 
+
+package jp;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class P21_ShapesWindow extends Frame{
+	 P21_ShapesWindow(){
+		 this.setSize(300,300);
+		 this.setLayout(null);
+		 this.setVisible(true);
+		 addWindowListener(new WindowAdapter() {
+	            public void windowClosing(WindowEvent e) {
+	                dispose(); 
+	            }
+	        });
+	 }
+    public static void main(String[] args) {
+       new P21_ShapesWindow();
+    }
+}

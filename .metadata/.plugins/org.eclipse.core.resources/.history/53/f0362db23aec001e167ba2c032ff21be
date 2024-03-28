@@ -1,0 +1,14 @@
+//26. Program to move different shapes according to the arrow key pressed.
+
+package jp;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P26_KeyboardEvents extends Frame{
+
+	public static void main(String[] args) {
+
+	}
+
+}

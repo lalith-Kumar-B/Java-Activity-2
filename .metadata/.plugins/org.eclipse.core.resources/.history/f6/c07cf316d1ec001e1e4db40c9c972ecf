@@ -1,0 +1,13 @@
+//27. Program to create a window when we press M or m the window displays Good Morning, A or a the window 
+//displays Good After Noon E or e the window displays Good Evening, N or n the window displays Good Night 
+
+package jp;
+
+public class P27_KeyEventsPart2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

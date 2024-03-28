@@ -1,0 +1,25 @@
+//24. Create a frame which displays your personal details with respect to a button click 
+
+package jp;
+
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P24_PersonalDetailFrame extends Frame implements ActionListener{
+	Label lName,lAge,lPhone,lState;
+	P24_PersonalDetailFrame(){
+		lName = new Label();
+		lAge = new Label();
+		lPhone = new Label();
+		lState = new Label();
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

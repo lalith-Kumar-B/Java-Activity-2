@@ -1,0 +1,33 @@
+package jp;
+
+import java.awt.*;
+import java.awt.event.*;
+
+@SuppressWarnings("serial")
+public class P28_MouseHandlingEvents extends Frame implements MouseListener {
+	
+	P28_MouseHandlingEvents(){
+		addMouseListener(this);
+	}
+	
+	public void mouseClicked(MouseEvent e) {
+		System.out.println("Mouse clicked");
+	}
+	public void mouseExited(MouseEvent e) {
+		System.out.println("Mouse Exited");
+	}
+	public void mouseEntered(MouseEvent e) {
+		System.out.println("Mouse Entered");
+	}
+	public void mouseReleased(MouseEvent e) {
+		System.out.println("Mouse Released");
+	}
+	public void mousePressed(MouseEvent e) {
+		System.out.println("Mouse Pressed");
+	}
+	
+	public static void main(String[] args) {
+		new P28_MouseHandlingEvents();
+	}
+
+}

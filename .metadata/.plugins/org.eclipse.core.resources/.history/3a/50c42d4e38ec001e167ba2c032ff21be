@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid Lines Applet</title>
+</head>
+<body>
+<applet code="P22_GridLinesApplet.class" width="400" height="400">
+</applet>
+</body>
+</html>

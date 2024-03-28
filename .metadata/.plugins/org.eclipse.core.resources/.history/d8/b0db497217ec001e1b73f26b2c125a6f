@@ -1,0 +1,46 @@
+package jp;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P23_OnclickEventWindow extends Frame implements ActionListener {
+    Label lName, lAge;
+
+    P23_OnclickEventWindow() {
+        lName = new Label();
+        lName.setBounds(60, 50, 170, 20);
+        lAge = new Label();
+        lAge.setBounds(60, 80, 170, 20);
+
+        Button b1 = new Button("Father");
+        b1.setBounds(50, 120, 80, 30);
+        b1.addActionListener(this); // Registering the ActionListener to handle events
+
+        Button b2 = new Button("Mother");
+        b2.setBounds(150, 120, 80, 30);
+        b2.addActionListener(this); // Registering the ActionListener to handle events
+
+        this.add(b1);
+        this.add(b2);
+        this.add(lName);
+        this.add(lAge);
+        this.setSize(300, 300);
+        this.setLayout(null);
+        this.setVisible(true);
+    }
+
+    public static void main(String args[]) {
+        new P23_OnclickEventWindow();
+    }
+
+    // Implementing the actionPerformed method required by the ActionListener interface
+    public void actionPerformed(ActionEvent e) {
+        if (e.getActionCommand().equals("Father")) {
+            lName.setText("Name : Mr.xyz");
+            lAge.setText("Age: 45");
+        } else if (e.getActionCommand().equals("Mother")) {
+            lName.setText("Name : Mrs.xyz");
+            lAge.setText("Age: 44");
+        }
+    }
+}

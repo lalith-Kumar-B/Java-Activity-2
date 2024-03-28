@@ -1,0 +1,9 @@
+package jp;
+
+import javax.swing.JOptionPane;
+
+public class P20_MsgWindow {
+    public static void main(String[] args) {
+    	JOptionPane.showMessageDialog(null, "Hello world","message");
+    }
+}

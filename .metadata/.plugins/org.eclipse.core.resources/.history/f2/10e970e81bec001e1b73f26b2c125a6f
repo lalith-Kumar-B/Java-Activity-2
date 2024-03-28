@@ -1,0 +1,50 @@
+//24. Create a frame which displays your personal details with respect to a button click 
+
+package jp;
+
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P24_PersonalDetailFrame extends Frame implements ActionListener{
+	
+	Label lName,lAge,lPhone,lState;
+	
+	P24_PersonalDetailFrame(){
+		
+		lName = new Label();
+		lName.setBounds(60,50,170,20);
+		this.add(lName);
+		
+		lAge = new Label();
+		lAge.setBounds(60,80,170,20);
+		this.add(lAge);
+		
+		lPhone = new Label();
+		lPhone.setBounds(60,110,170,20);
+		this.add(lPhone);
+		
+		lState = new Label();
+		lState.setBounds(60,140,180,20);;
+		this.add(lState);
+		
+		Button b = new Button("View Details");
+		b.addActionListener(this);
+		this.add(b);
+	}
+	
+	
+	public void actionPerformed(ActionEvent e) {
+		if(e.getActionCommand().equals("View Details")) {
+			lName.setText("Name : Lalith");
+			lAge.setText("Age : 19");
+			lPhone.setText("+91830202*9**");
+			lState.setText("Rajasthan");
+		}
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,24 @@
+//20. Program which create and displays a message on the window 
+
+package jp;
+
+import java.awt.*;
+
+class MsgFrame extends Frame{
+	
+	MsgFrame(){
+		Button b = new Button("Press Me");
+		b.setBounds(100,10,10,10);
+		this.add(b);
+		this.setSize(200,200);
+		this.setTitle("Hello World Window");
+		this.setLayout(null);
+		this.setVisible(true);
+	}
+}
+
+public class P20_MsgWindow {
+    public static void main(String[] args) {
+    	MsgFrame a = new MsgFrame();
+    }
+}

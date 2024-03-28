@@ -1,0 +1,41 @@
+//23. Program which creates a frame with two buttons father and mother. When we click the father button the name of the father, his age and designation must appear. 
+//When we click mother similar details of mother also appear. 
+
+package jp;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P23_OnclickEventWindow extends Frame implements ActionListener{
+	
+	TextField T;
+
+	P23_OnclickEventWindow(){
+		
+		T = new TextField();  
+		T.setBounds(60,50,170,20);
+		
+		Button b1 = new Button("click me 1");  
+		b1.setBounds(50,120,80,30);  
+		b1.addActionListener(this);  
+		
+		Button b2 = new Button("click me 2");
+		b2.setBounds(150,120,80,30);  
+		b2.addActionListener(this);
+		
+		this.add(b1);
+		this.add(b2);
+		this.add(T);  
+		this.setSize(300,300);  
+		this.setLayout(null);  
+		this.setVisible(true);  
+}  
+
+public void actionPerformed(ActionEvent e){  
+		T.setText("Welcome");  
+	}  
+
+public static void main(String args[]){  
+		new P23_OnclickEventWindow();  
+	}  
+}  

@@ -1,0 +1,14 @@
+//24. Create a frame which displays your personal details with respect to a button click 
+
+package jp;
+
+import java.awt.*;
+
+public class P24_PersonalDetailFrame extends Frame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

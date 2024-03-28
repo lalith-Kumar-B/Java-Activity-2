@@ -1,0 +1,78 @@
+//27. Program to create a window when we press M or m the window displays Good Morning, A or a the window 
+//displays Good After Noon E or e the window displays Good Evening, N or n the window displays Good Night 
+
+package jp;
+
+import java.awt.*; 
+import java.awt.event.*;
+
+@SuppressWarnings("serial")
+public class P27_KeyEventsPart2 extends Frame implements KeyListener{
+	
+	Label l;
+	
+	P27_KeyEventsPart2(){
+
+		l = new Label();
+		l.setBounds(150,20,180,20);
+		this.add(l);
+		this.setSize(300,300);
+		this.setVisible(true);
+		this.setTitle("Greeting Window");
+		
+		addKeyListener(this);
+		
+		addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                dispose();
+            }
+        });
+	}
+	
+	public void keyPressed(KeyEvent e) {
+		
+		switch(e.getKeyCode()) {
+		
+		case KeyEvent.VK_M : {
+			l.setText("Good Morning.");
+			l.setVisible(true);
+			break;
+			}
+			
+		case KeyEvent.VK_A : {
+			l.setText("Good Afternoon.");
+			l.setVisible(true);
+			break;
+			}
+		
+		case KeyEvent.VK_E: {
+			l.setText("Good Evening.");
+			l.setVisible(true);
+			break;
+			}
+			
+		case KeyEvent.VK_N : {
+			l.setText("Good Night.");
+			l.setVisible(true);
+			break;
+			}	
+			
+		}
+	};
+	
+	public void keyTyped(KeyEvent e) {
+		
+	};
+	
+	public void keyReleased(KeyEvent e) {
+		
+	};
+	
+	public static void main(String[] args) {
+		
+		new P27_KeyEventsPart2();
+
+	};
+	
+
+}

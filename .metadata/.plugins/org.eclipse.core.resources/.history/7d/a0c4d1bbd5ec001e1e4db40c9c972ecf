@@ -1,0 +1,29 @@
+package jp;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P28_MouseHandlingEvents extends Frame implements MouseListener {
+	
+	public void mouseClicked() {
+		
+	}
+	public void mouseExited() {
+		
+	}
+	public void mouseEntered() {
+	
+	}
+	public void mouseReleased() {
+	
+	}
+	public void mousePressed() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}
