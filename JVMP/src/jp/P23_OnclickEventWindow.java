@@ -1,3 +1,5 @@
+//23. Program which creates a frame with two buttons father and mother. When we click the father button the name of the father, his age and designation must appear. When we click mother similar details of mother also appear. 
+
 package jp;
 
 import java.awt.*;
